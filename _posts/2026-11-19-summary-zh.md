@@ -5,241 +5,228 @@ date: 2026-11-19
 lang: zh
 ---
 
-> 从 46 条内容中筛选出 10 条重要资讯。
+> 从 53 条内容中筛选出 9 条重要资讯。
 
 ---
 
-**科技新闻**
-1. [谷歌发布 Gemini 4 Neon，主打软件工程与科研工作流](#item-tech-news-1) ⭐️ 8.0/10
-2. [Anthropic 完成 IPO 定价，发行规模与估值引发争议](#item-tech-news-2) ⭐️ 8.0/10
-3. [Nginx HTTP/2 未认证远程代码执行漏洞披露](#item-tech-news-3) ⭐️ 8.0/10
-4. [Xint 披露 5 个 nginx 漏洞可至主机 root](#item-tech-news-4) ⭐️ 8.0/10
-5. [LLM 辅助逆向工程的工作流与局限](#item-tech-news-5) ⭐️ 7.0/10
-6. [Google DeepMind 宣布 Genie 4 可用，订阅访问条件不明](#item-tech-news-6) ⭐️ 7.0/10
-7. [拆解旅行者 1 号至单颗存储芯片](#item-tech-news-7) ⭐️ 7.0/10
-8. [Ruby 披露正则与字符串大小写转换多个漏洞](#item-tech-news-8) ⭐️ 7.0/10
+**AI**
+1. [谷歌发布 Gemini 4 Neon 模型](#item-ai-news-1) ⭐️ 8.0/10
+2. [微软 Ignite 2026 发布七款新模型，主打可扩展性价比](#item-ai-news-2) ⭐️ 7.0/10
+3. [Google DeepMind 宣布 Genie 4 上线](#item-ai-news-3) ⭐️ 7.0/10
+4. [OpenAI 称其模型缩小 Jalapeño 标准单元面积，并提升 AMD GPU PPA 达 14%](#item-ai-news-4) ⭐️ 7.0/10
 
-**财经新闻**
-1. [美联储会议纪要：官员预计仍需加息，并警示 AI 相关通胀与融资风险](#item-finance-news-1) ⭐️ 8.0/10
-2. [Anthropic 将 IPO 定价为每股 83 美元，计划登陆纳斯达克](#item-finance-news-2) ⭐️ 8.0/10
+**Web 开发**
+1. [Nginx HTTP/2 未认证远程代码执行漏洞](#item-web-development-1) ⭐️ 8.0/10
+2. [《虚幻竞技场 2004》浏览器可玩版本](#item-web-development-2) ⭐️ 7.0/10
+
+**开源 / 开发工具**
+1. [Ruby 披露 Regexp 与字符串大小写转换多项漏洞](#item-devtools-news-1) ⭐️ 8.0/10
+2. [GitHub CLI 新增 gh event listen，可等待拉取请求事件](#item-devtools-news-2) ⭐️ 7.0/10
+3. [GitHub Copilot 开放 Gemini 4 Neon](#item-devtools-news-3) ⭐️ 6.0/10
 
 ---
 
-## 科技新闻
+## AI
 
-<a id="item-tech-news-1"></a>
-### [谷歌发布 Gemini 4 Neon，主打软件工程与科研工作流](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) ⭐️ 8.0/10
+<a id="item-ai-news-1"></a>
+### [谷歌发布 Gemini 4 Neon 模型](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) ⭐️ 8.0/10
 
-谷歌发布 Gemini 4 Neon，面向开发者、企业及 Google AI Pro/Ultra 订阅用户开放，主打在复杂软件工程、知识工作和科研工作流中快速端到端执行，支持 100 万 token 上下文。定价为每百万输入 token 3 美元、缓存输入 0.15 美元、输出 15 美元。谷歌给出的成绩包括 Artificial Analysis 编程智能体指数 58.6 分排名第一、智能指数 xhigh 档 61 分总榜第三，以及 Terminal-Bench 4.1 得分 65.2%；默认 high 档单任务成本比 Carbon 低 32%，这些均为厂商或榜单口径，尚缺独立复测。
+谷歌发布 Gemini 4 家族新模型 Gemini 4 Neon，称其面向复杂软件工程、知识工作和科研工作流，强调快速端到端执行；该模型已向开发者、企业以及 Google AI Pro/Ultra 订阅用户开放。谷歌公布的价格为每百万输入 token 3 美元（缓存输入 0.15 美元）、输出 15 美元，支持 100 万 token 上下文。谷歌还称，Neon 在 Artificial Analysis 编程智能体指数以 58.6 分排名第一，智能指数 xhigh 档为 61 分、总榜第三，Terminal-Bench 4.1 得分 65.2%，默认 high 档单任务成本较 Carbon 低 32%。上述能力和分数主要来自谷歌及榜单信息，目前尚缺独立复现。
 
 hackernews · yigitdemirag · 11月18日 21:34 · [社区讨论](https://news.ycombinator.com/item?id=50552424)
 
-**「背景」** Gemini 4 Neon 属于 Google 的 Gemini 4 型号家族，同一系列中还有 Carbon 等型号；Google 公布的对比显示，Neon 默认 high 档的单任务成本比 Carbon 低 32%。这一家族内部分工是理解 Neon 定位的前提：它并非系列中唯一型号，实际选择还需同时看基准、成本和任务类型。
+**「背景:Gemini 4 家族的分层定位」** Gemini 4 是谷歌以模型家族形式推进的一代产品，家族内部按规模与用途分层：Carbon 被定位为面向长周期（long-horizon）任务的模型，Neon 则是家族中的新成员，官方给出的对比也主要围绕 Carbon 展开。这类发布通常借助 Artificial Analysis 的智能指数、编程智能体指数以及 Terminal-Bench 等第三方评测来横向定位，而这些指数会区分“总体智能”与特定任务上的强弱，因此理解 Neon 的位置需要先区分这两类指标。
 
-**「影响」** 对开发者而言，Neon 的 100 万 token 上下文和公开定价使其可以按 token 成本评估是否替换 Carbon；但基准分数与 32% 的单任务成本优势均来自谷歌或榜单口径，迁移前应使用自有工作流验证，尤其是长程科研任务。
+**「对开发者的影响」** Google 将 Neon 放在 Carbon 与 Hydrogen 之间，主打复杂软件工程和生产级工作流，并支持 100 万 token 上下文；开发者因此多了一个按任务深度与成本权衡的 Gemini 4 档位，不必只依据总榜分数选择旗舰模型（tool-2-1、tool-2-3）。Google 称 Neon 在默认 high 档下单任务成本比 Carbon 低 32%，但 Artificial Analysis 的评测显示，它在评估中生成了 283M tokens，远高于 65.1M 的中位数，因此实际账单和延迟仍需把输出冗长度计入（tool-2-2）。
 
-**「社区讨论」** 评论者主要争论 Neon 在 Gemini 4 家族中的定位：有人认为它总体智能高于 Carbon，但 Carbon 仍被定位为长程模型，并在 CritPt 等研究型评测上更高，说明“总榜更强”不等于所有前沿任务更强。也有人报告 OpenRouter 上 Neon 约 127 token/s、快于 Carbon 的 46 token/s，并质疑旗舰模型为何更快；另有用户认为 Gemini 的基准表现仍不如 Opus 5.5 的整体体验。
-
-**标签**: `#Google Gemini`, `#large language models`, `#AI model release`, `#model benchmarks`, `#Hacker News`
-
----
-
-<a id="item-tech-news-2"></a>
-### [Anthropic 完成 IPO 定价，发行规模与估值引发争议](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) ⭐️ 8.0/10
-
-Anthropic 已为其首次公开募股定价，但原始条目只有公告标题，没有披露发行价、股数或募资额等具体条款。社区评论称，此次发行 9.8 亿股 A 类普通股、每股 83 美元，募资约 1050 亿美元，且股数较此前计划的 8.25 亿股有所扩大；这些数字来自评论，尚不能视为公司确认。评论还围绕约 1.5 万亿美元市值、竞争壁垒以及员工是否可立即出售持股展开争论。
-
-hackernews · surprisetalk · 11月18日 23:30 · [社区讨论](https://news.ycombinator.com/item?id=50553843)
-
-**「背景」** IPO 定价是上市流程中确定发行价与发行规模的环节，通常发生在股票正式挂牌交易之前，由公司与承销商根据认购需求等因素确定。该条目仅为一个标题链接，未附官方公告或招股书，评论中出现的发行股数、定价和募资额等具体数字均属社区说法，需以官方披露为准。
-
-**「社区讨论」** 一派评论认为 Anthropic 缺乏真正的护城河，将其比作互联网泡沫时期的 AltaVista；另一派则反驳称其模型能力已领先竞争对手，反蒸馏措施也拖慢了中国模型的追赶速度。关于扩大发行、允许员工立即卖出以及高估值是否合理的讨论同样存在明显分歧。
-
-**标签**: `#AI industry`, `#Anthropic`, `#IPO`, `#valuations`, `#funding`
-
----
-
-<a id="item-tech-news-3"></a>
-### [Nginx HTTP/2 未认证远程代码执行漏洞披露](https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities) ⭐️ 8.0/10
-
-Wiz 博客文章披露 Nginx 的 HTTP/2 实现存在无需认证的远程代码执行漏洞，涉及 CVE-2026-123633 和 CVE-2026-123007，受影响的是启用 HTTP/2 的 Nginx 服务。Nginx 默认不启用 HTTP/2；有评论者引用 W3Techs 的分段数据称约 12% 的服务器启用了它。可用的缓解方式包括立即更新，或在无法更新时关闭 HTTP/2；现有材料未列出具体受影响版本和修复版本，需查厂商公告。
-
-hackernews · speedping · 11月18日 15:19 · [社区讨论](https://news.ycombinator.com/item?id=50547374)
-
-**「背景」** 本次问题位于 nginx 的 HTTP/2 代码路径：Red Hat 对 CVE-2026-123633 的记录称，在将 HTTP/2 客户端连接代理到后端服务器时，攻击者可用特制请求触发释放后使用（use-after-free），进而执行任意代码或使 worker 进程崩溃。Upwind 汇总称 F5 已于 2026 年 11 月 18 日修复 CVE-2026-123007 和 CVE-2026-123633；Matthías 的梳理则称 nginx 1.9.5 至 1.31.8 在开启 HTTP/2 时均受影响。
-
-**「影响与缓解」** 使用受影响 NGINX 且启用了 HTTP/2 的站点和 API 会暴露在未认证远程代码执行风险下；无法立即升级的管理员应临时关闭 HTTP/2（NGINX 1.25.1 及以后在相关 server 块设置 \`http2 off\`，更早版本从 \`listen\` 指令移除 \`http2\`），升级后再重新启用。
-
-**「社区讨论」** 评论者批评修复提交在公开仓库中先行约一周、随后才发布安全公告，认为这给能监控仓库的人留下了利用窗口；也有人指出 HTTP/2 并非 Nginx 默认开启、约 12% 的服务器启用它，因而实际暴露面小于“所有 Nginx”。另一条评论提供了检查漏洞和临时缓解的链接，强调无法立即升级时应先关闭 HTTP/2。
+**「社区讨论」** 有评论认为，Neon 虽在综合基准上更高，但实际通用智能体验仍不如 Opus 5.5；也有评论指出 Carbon 仍被定位为长时程模型，且 Neon 在 CritPt 等研究级推理评测上得分更低，显示前沿模型的能力分布更参差。还有用户报告 OpenRouter 上 Neon 约为 127 tokens/s、明显快于 Carbon 的 46 tokens/s，并对其旗舰定位感到困惑。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://access.redhat.com/security/cve/cve-2026-123633">CVE-2026-123633 - Red Hat Customer Portal</a></li>
-<li><a href="https://www.upwind.io/blog/nginx-cve-2026-123007-and-cve-2026-123633-four-web-facing-rces-one-patch-and-where-kubernetes-is-exposed">Remote Code Execution in NGINX HTTP/2: CVE-2026-123007 and ...</a></li>
-<li><a href="https://ma.ttias.be/nginx-http2-cve-2026-123633-123007/">nginx HTTP/2 RCE (CVE-2026-123633, CVE-2026-123007): patch ...</a></li>
-<li><a href="https://nginx2shell.com/">Remote code execution in NGINX HTTP / 2 (CVE-2026-123633...)</a></li>
-<li><a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Unauthenticated Remote Code Execution in NGINX ... | Wiz Blog</a></li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">Introducing Gemini 4 Neon</a></li>
+<li><a href="https://artificialanalysis.ai/models/gemini-4-neon">Gemini 4 Neon Models - Intelligence... | Artificial Analysis</a></li>
+<li><a href="https://openrouter.ai/google/gemini-4-neon">Gemini 4 Neon - API Pricing &amp; Benchmarks | OpenRouter</a></li>
 
 </ul>
 </details>
 
-**标签**: `#nginx`, `#security-vulnerability`, `#remote-code-execution`, `#http2`, `#disclosure`
+**标签**: `#Gemini 4`, `#Google`, `#frontier models`, `#model release`, `#benchmark comparisons`
 
 ---
 
-<a id="item-tech-news-4"></a>
-### [Xint 披露 5 个 nginx 漏洞可至主机 root](https://nginx2root.com/) ⭐️ 8.0/10
+<a id="item-ai-news-2"></a>
+### [微软 Ignite 2026 发布七款新模型，主打可扩展性价比](https://microsoft.ai/news/microsoft-ignite-2026/) ⭐️ 7.0/10
 
-Xint 公开了名为 NGINX2Root 的漏洞链，将 5 个 nginx 漏洞与 1 个 Linux 内核缺陷串联，声称可从 nginx 访客一路提权到主机 root。其中 CVE-2026-123007 被描述为 HTTP/2 流控内存破坏，未认证即可在 worker 进程中执行命令；nginx 1.30.7 和 1.31.9 已于 11 月 18 日修复 10 个 CVE，Rapid7 已放出 PoC，披露称暂无在野利用。无法升级的用户被建议关闭对外 HTTP/2；上述信息来自简短披露，尚未经过独立验证。
+微软在 Ignite 2026 上宣布推出七款新 AI 模型，整体定位为“可扩展的性价比”。目前提供的材料中没有附带基准测试成绩、具体定价、上下文长度或上线与开放范围等细节，因此这些模型的实际能力与成本优势尚无法独立核实。该消息在 Hacker News 上引发约 539 点热度的讨论，但讨论中的性能对比多为个人体验与推测。
 
-telegram · zaihuapd · 11月18日 16:21
+hackernews · gmays · 11月18日 16:08 · [社区讨论](https://news.ycombinator.com/item?id=50548021)
 
-**「背景」** 此次漏洞链的核心 CVE-2026-123007 并非新近引入：据 The Hacker News 报道，这个 HTTP/2 流控整数下溢问题自 nginx 1.9.5（2015 年 9 月 22 日发布）起就存在于开源代码中，直到 2026 年 11 月 18 日发布的 1.31.9 和 1.30.7 才得到修复。
+**「背景」** Ignite 是微软的年度旗舰活动，历来集中发布重大公告，并提供深度技术学习内容与讲师交流 \[tool-1-2\]。微软 AI 还通过 MAI Labs 提供新模型和实验性模型的有限预览，例如 MAI Image 2.7 在发布时登上了 Artificial Analysis 的图像编辑榜单 \[tool-1-1\]。此次七款新模型的消息正是在 Ignite 2026 的发布语境下出现 \[tool-1-3\]。
 
-**「处置建议」** 运行受影响 nginx 版本的运维人员应优先升级到 1.30.7 或 1.31.9；若暂时无法升级，需按公告关闭对外 HTTP/2，因为 CVE-2026-123007 等 HTTP/2 漏洞在启用该协议时可被未认证攻击者触发。Rapid7 已公开 PoC，公网服务应尽快核对版本并完成升级。
+**「影响」** 对正在选型的开发者而言，这意味着又多了一个多模型产品线需要纳入比较；但由于缺乏公开的基准与价格数据，短期内只能靠自行试用而非官方指标来做判断。
+
+**「社区讨论」** 一位评论者称自己试用了 MAI Code 2，认为在日常工作上表现不错，与 Opus 或 Sol 大致相当；另一位则认为微软若不把部分模型开源或开放权重，很难争到市场份额。也有评论批评这场主题演讲缺乏技术深度、偏于机会主义。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html">10-Year-Old NGINX HTTP / 2 Flaw Lets Unauthenticated Attackers...</a></li>
-<li><a href="https://www.sophos.com/en-us/security-advisories/sophos-sa-20261118-nginx2root">Advisory: NGINX Vulnerabilities - nginx2root (CVE-2026-123007 ...</a></li>
-<li><a href="https://cycode.com/blog/nginx2root-cve-2026-123007/">NGINX2Root (CVE-2026-123007): Affected Versions, How to Check ...</a></li>
+<li><a href="https://microsoft.ai/models/mai-image-2-7/">MAI Image 2 . 7 | Microsoft AI</a></li>
+<li><a href="https://ignite.microsoft.com/">Your home for Microsoft Ignite</a></li>
+<li><a href="https://www.youtube.com/watch?v=I7ovGye-ACc">A moment unlike any other | Microsoft Ignite 2026 - YouTube</a></li>
 
 </ul>
 </details>
 
-**标签**: `#nginx`, `#security vulnerabilities`, `#HTTP/2`, `#privilege escalation`, `#CVE`
+**标签**: `#Microsoft`, `#AI model release`, `#price-performance`, `#model lineup`, `#Hacker News`
 
 ---
 
-<a id="item-tech-news-5"></a>
-### [LLM 辅助逆向工程的工作流与局限](https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering) ⭐️ 7.0/10
+<a id="item-ai-news-3"></a>
+### [Google DeepMind 宣布 Genie 4 上线](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/) ⭐️ 7.0/10
 
-一篇实践型博客文章及随附的 Hacker News 讨论帖聚焦用 LLM 逆向分析二进制和设备插件；讨论中的具体做法包括先确认目标来源或试跑现有项目，再用独立网络命名空间和 tcpdump 隔离、捕获所需流量。评论者报告了多个案例：有人在约两小时内用 Gemini 定位 CCTV 摄像头云插件连接的不同服务器地址，另有几乎没有逆向经验的人恢复了已停止维护的音频效果插件和带 DSP 的虚拟乐器。讨论还指出常见失败模式是代理陷入反复猜测的循环，面对更大目标时需要人工不断纠正并迫使其进行确定性实验。
-
-hackernews · ioma8 · 11月18日 22:29 · [社区讨论](https://news.ycombinator.com/item?id=50553225)
-
-**「背景」** 逆向工程通常依赖反汇编器、反编译器，以及抓包、调试等动态分析手段：从业者先根据二进制或协议行为提出假设，再设计实验逐一验证。把 Claude、Gemini、Codex 这类编码智能体引入这一流程后，模型可以自行提出假设并尝试操作，但其结论质量取决于能否获得明确、可判定的验证信号；当目标接近黑盒、反馈模糊时，智能体容易反复猜测而不去做可证伪的实验，这也是相关实践中反复强调“停止猜测、强制做确定性实验”的原因。
-
-**「影响」** 对需要处理遗留插件或自有物联网设备的开发者，这些报告提示可先用网络命名空间和抓包把目标流量与噪声隔离，再让 LLM 协助定位协议或二进制逻辑；不过评论者强调，目标越大越需要人工监督，否则代理可能在猜测中空转。
-
-**「社区讨论」** 评论区的分歧集中在收益与过程：saidinesh5 和 hexapus 报告 LLM 显著降低了逆向门槛并缩短了耗时，而 therepanic 认为把过程交给 AI 会同时失去技能锻炼和最终完成的满足感。Retr0id 则把“猜测循环”列为用 Claude 逆向时的主要困扰，称在更难的目标上必须持续监督并明确要求停止猜测。
-
-**标签**: `#llm-assisted-reverse-engineering`, `#reverse-engineering`, `#ai-coding-agents`, `#security-research`, `#binary-analysis`
-
----
-
-<a id="item-tech-news-6"></a>
-### [Google DeepMind 宣布 Genie 4 可用，订阅访问条件不明](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/) ⭐️ 7.0/10
-
-Google DeepMind 宣布 Genie 4 已可用，但现有材料没有给出模型参数、支持地区、价格或完整访问条件。Hacker News 讨论中，有用户称页面只写明面向“符合条件的 Google AI Ultra 订阅者”，并用非 Workspace 的 Gmail 账户看到 Ultra 权益仍对应 Genie 3，因此无法判断这是地区限制还是页面未更新。就目前信息看，这是一项订阅访问细节尚待澄清的发布，尚无独立验证的能力数据。
+谷歌 DeepMind 通过官方博客宣布 Genie 4 现已可用，这是其生成式世界模型系列的新版本。提供的材料中没有技术细节、基准数据或明确的开放范围，帖子标题只称其“now available”（现已可用）。评论区一位用户称文中写的是面向“符合条件的 Google AI Ultra 订阅者”，但其账号目前仍只显示 Genie 3，因此不确定是地区限制（早前版本曾仅限美国）还是页面尚未更新。上述访问条件来自社区转述，未获独立确认。
 
 hackernews · leumon · 11月18日 18:49 · [社区讨论](https://news.ycombinator.com/item?id=50550415)
 
-**「背景」** Genie 是 Google DeepMind 的生成式世界模型产品线，核心能力是让模型根据提示生成可交互、可探索的虚拟环境，而不是只输出静态图像或视频。此次 Genie 4 以面向合格 Google AI Ultra 订阅者开放的形式出现，因此可用性同时受订阅层级和地区、账户条件影响，这也解释了讨论为何集中在如何付费使用以及不同账户看到的功能差异上。
+**「背景：Project Genie 与 Genie 世界模型」** Genie 是 Google DeepMind 的世界模型系列，最新版本 Genie 4 通过 Project Genie 提供，用户可以用它创建和重混可交互的世界。Project Genie 在发布时面向符合条件的 Google AI Ultra 订阅用户开放，Google AI Pro 会员则可加入等待名单。
 
-**「对开发者的影响」** 对做游戏或交互式仿真原型的开发者来说，Genie 4 的原生音频和自然语言实时操控意味着可以在生成世界的同时生成环境声、音乐和对话，并用自然语言调整镜头、天气或角色；但现有材料只列出这些能力，没有给出延迟、分辨率或控制稳定性数据，因此在接入生产流程前应先按自己的场景做可重复性测试，而不能把它当成可直接替换传统引擎的方案。
-
-**「社区讨论」** 评论中最具体的反馈是访问混乱：kingrolo 称 Workspace 账户无法获得 Ultra 订阅，且非 Workspace Gmail 账户看到的 Ultra 权益仍是 Genie 3，质疑 Google 未说明付费使用条件。另有评论者讨论世界模型的质量标准（旋转 360° 时周围细节不应变化），并把 Genie 4 视为未来游戏引擎的潜在雏形，同时怀疑 Google 是否会允许用其重制 GTA 这类游戏。
+**「社区讨论」** 讨论主要围绕可用性与付费门槛：有用户抱怨 Google 未说清如何付费使用，自己的 Ultra 账号仍只看到 Genie 3；也有人认为世界模型的关键判据是 360° 环视时周围细节保持不变。另有用户猜测，这类模型若足够强大，未来可能成为游戏引擎的运作方式，甚至承载类似 GTA 的作品，但同时有人对这类技术的整体走向表达了抵触。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Genie 4: A new generation of world simulation — Google DeepMind</a></li>
-<li><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/">We’re announcing Genie 4, our new world model for real-time ...</a></li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/">Project Genie update featuring Genie 4</a></li>
+<li><a href="https://deepmind.google/models/genie/">Genie 4 — Google DeepMind</a></li>
+<li><a href="https://labs.google/projectgenie">Project Genie</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Genie 4`, `#world models`, `#Google DeepMind`, `#game engines`, `#AI product release`
+**标签**: `#Google DeepMind`, `#Genie 4`, `#world models`, `#model release`, `#subscription availability`
 
 ---
 
-<a id="item-tech-news-7"></a>
-### [拆解旅行者 1 号至单颗存储芯片](https://rshekhar.com/voyager/) ⭐️ 7.0/10
+<a id="item-ai-news-4"></a>
+### [OpenAI 称其模型缩小 Jalapeño 标准单元面积，并提升 AMD GPU PPA 达 14%](https://openai.com/index/advancing-chip-design-with-our-models/) ⭐️ 7.0/10
 
-由 raj-shekhar 制作的交互网站已上线，可在浏览器中逐层查看旅行者 1 号的系统：从核电池的 24 个钚球，到数据计算机的存储区乃至单颗存储芯片，并包含金唱片封面说明、无线电修复过程、地球接收天线和两艘旅行者号的当前位置。作者称旅行者 1 号在站点发布当天达到距地球一光日，站点还链接了一部四分钟短片。它定位为教育与工程科普资源，而非新的探测结果或任务公告。
+OpenAI 发布消息称，其模型参与了自研推理芯片 Jalapeño 的设计，使向量单元的标准单元面积减少约 13%、矩阵单元减少约 10%，并称相关优化已在芯片点亮中得到验证。OpenAI 还称，在与 AMD 的合作中，其模型帮助旗舰 GPU IP 的功耗、性能和面积（PPA）相对高度优化基线最高提升 14%，部分改动已进入送厂制造的设计。OpenAI 同时宣布与 Synopsys 合作训练 GPT-Synopsys 模型。上述均为 OpenAI 公布的说法，未提供可复核的方法细节，也未见独立验证。
 
-hackernews · raj-shekhar · 11月18日 16:18 · [社区讨论](https://news.ycombinator.com/item?id=50548161)
+telegram · zaihuapd · 11月19日 09:30
 
-**「背景」** 一光日指光在 24 小时内行进的距离，约为 160 亿英里（约 260 亿公里）。NASA 指出，旅行者 1 号于 2026 年 11 月 18 日美国东部时间 5:16:07 到达这一距离，这为理解该互动项目所围绕的距离里程碑提供了尺度。
+**「背景」** 标准单元是数字芯片设计的基本构件，其面积直接影响芯片尺寸与成本；PPA（功耗、性能、面积）则常用于衡量 GPU IP 的设计优劣。OpenAI 此次披露的是其模型在自研推理芯片和 AMD 旗舰 GPU IP 上的优化结果，属于 AI 参与芯片设计流程的具体案例。
 
-**「影响」** 对教学和工程读者，这个站点可作为按部件浏览旅行者 1 号核电池、存储器和金唱片等细节的入口；但社区已有人追问其制作过程和权威来源，因此引用具体故障机理或硬件参数前仍应核对原始任务资料。
+**「影响」** 对芯片设计团队而言，具体影响是 AI 辅助优化开始被拿来对照标准单元面积和 GPU IP 的 PPA 这类可量化设计目标；但在方法披露和独立复现之前，这些数字更适合作为评估线索，而非可直接引用的基准。
 
-**「社区讨论」** 评论整体称赞可视化效果与拆解深度，有人认为把 1970 年代末的系统呈现到这种程度很不简单。讨论中也出现两类实质追问：一位评论者希望追到 CMOS 存储芯片具体失效的模拟机理，另一位则问站点是否主要由 AI 生成、是否对照权威资料核查。
+**标签**: `#AI for chip design`, `#OpenAI`, `#AMD`, `#EDA`, `#hardware`
+
+---
+
+## Web 开发
+
+<a id="item-web-development-1"></a>
+### [Nginx HTTP/2 未认证远程代码执行漏洞](https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities) ⭐️ 8.0/10
+
+该条目报道 Nginx 的 HTTP/2 未认证远程代码执行问题，涉及 CVE-2026-123633 和 CVE-2026-123007 两个 CVE 记录。所给内容主要是 CVE 链接和社区讨论，没有完整的技术分析或明确的受影响版本范围。社区关注点集中在修复披露时间差、HTTP/2 的实际部署比例以及临时禁用 HTTP/2 的缓解方式。
+
+hackernews · speedping · 11月18日 15:19 · [社区讨论](https://news.ycombinator.com/item?id=50547374)
+
+**「漏洞背景与 HTTP/2 前置条件」** 该事件涉及 NGINX 自身的两个 Critical 漏洞（CVE-2026-123633、CVE-2026-123007），Wiz 记录其 CVSS 4.0 评分为 9.2；即使站点应用代码安全，暴露在外的网站和 API 仍可能受影响。其中一个漏洞位于 HTTP/2 流控路径，临时关闭 HTTP/2 可阻断这两个 CVE，但无法覆盖同一批披露中的其他三个漏洞。在 NGINX 1.25.1 及以后版本，需要在受影响的 server 块中设置 http2 off，并从 listen 指令移除 http2。
+
+**「影响与处置」** 对暴露在公网且启用 HTTP/2 的 Nginx 实例，应在确认受影响版本后尽快升级；无法立即升级时可临时禁用 HTTP/2 作为缓解，并复查两个 CVE 记录以获取修复版本与配置限制。
+
+**「社区讨论」** 有评论称修复在一周前已进入开源仓库，并质疑为何未更早发布禁用 HTTP/2 的公告；另有评论引用 W3Techs 数据称 HTTP/2 并非 Nginx 默认启用，约 12% 的服务器使用它，并给出 xint.io 的自查与临时缓解链接。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/">Voyager 1: What Is a Light-Day - NASA Science</a></li>
+<li><a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Unauthenticated Remote Code Execution in NGINX ... | Wiz Blog</a></li>
+<li><a href="https://www.ox.security/blog/nginx2root-five-critical-nginx-flaws-expose-web-servers-to-remote-code-execution/">NGINX 2 Root: 5 Critical NGINX RCE Vulnerabilities &amp; CVE Fixes</a></li>
+<li><a href="https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html">10-Year-Old NGINX HTTP / 2 Flaw Lets Unauthenticated Attackers...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Voyager 1`, `#interactive visualization`, `#computer hardware`, `#spacecraft systems`, `#computing history`
+**标签**: `#nginx`, `#http/2`, `#remote-code-execution`, `#security-vulnerability`, `#server-operations`
 
 ---
 
-<a id="item-tech-news-8"></a>
-### [Ruby 披露正则与字符串大小写转换多个漏洞](https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/) ⭐️ 7.0/10
+<a id="item-web-development-2"></a>
+### [《虚幻竞技场 2004》浏览器可玩版本](https://ut2004.dev/) ⭐️ 7.0/10
 
-Ruby 安全公告披露正则表达式和字符串大小写转换中的多个漏洞，涉及非 ASCII 编码处理；公告称 CVE 编号已申请但尚未分配，暂以 GitHub Security Advisory（GHSA）编号标识。社区评论补充了两个具体触发场景：Windows-1252 中把末尾的 ß 转为大写会展开成“SS”并增加长度，代码若按单字符预留缓冲区可能越界；Shift\_JIS 下对超长字符串调用 downcase 也会出现异常结果。Ruby 用户应尽快查看公告并按指引升级或规避。
+ut2004.dev 上出现了一个可在浏览器中直接运行的《虚幻竞技场 2004》版本，并在 Hacker News 上引发讨论。该演示把 Unreal Engine 2 时代的大型 3D 游戏搬进浏览器，属于 WebAssembly/WebGL 一类移植工程，而非普通教程示例。但提供给我的材料只有标题、链接和评论，具体移植方式（是否使用 Emscripten、WebGL 版本、资源如何加载、是否依赖原版游戏文件）均未得到证实。因此其运行时兼容性与性能表现目前无法确认。
+
+hackernews · TheAceOfHearts · 11月19日 01:29 · [社区讨论](https://news.ycombinator.com/item?id=50554935)
+
+**「背景」** 该项目是一个从零开始的 Emscripten/WebAssembly 移植：它基于 2004 年发布的 UT2004 源码，经由社区维护的 UT2004\_CMAKE 代码树，把 Unreal Engine 2 时代的引擎与游戏逻辑编译到浏览器中运行（tool-1-1）。据外部介绍，浏览器端需一次性存储约 2 GB 资源，提供约十张地图，多人对战通过 WebRTC 实现（tool-1-3）；这些细节仅来自项目与报道层面，源条目本身未给出实现说明。
+
+**「许可与技术需分开评估」** 评估这类浏览器移植时，应把渲染、输入等技术可行性同游戏数据的分发许可分开处理：引擎能在 WebAssembly/WebGL 下跑起来，并不等于可以公开分发 UT2004 的资源文件，目前可自由获取的合法途径是 Epic 授权分发的 OldUnreal 补丁与安装包 \[tool-3-1\]。对打算做同类移植的团队，先确认素材授权范围，再决定是自托管演示还是让用户自备游戏文件，可避免上线后被下架。
+
+**「社区讨论」** 有评论者指出，Epic 此前允许 Old Unreal 继续开发，因此可以从 oldunreal.com 下载完整的 UT2004 安装包，在本地（例如 Linux）运行，并称效果良好。另一位评论者发现 Epic 已将 UT2004 从 GOG 下架，已购买的用户仍能在游戏库中看到它，但新用户无法再购买。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://github.com/rgnv/ut2004-wasm">GitHub - rgnv/ut2004-wasm: Unreal Tournament 2004 in the ...</a></li>
+<li><a href="https://korben.info/en/unreal-tournament-2004-is-back.html">Unreal Tournament 2004 is back! - Korben</a></li>
+<li><a href="https://www.pcgamingwiki.com/wiki/Unreal_Tournament_2004">Unreal Tournament 2004 | PCGamingWiki (PCGW)</a></li>
+
+</ul>
+</details>
+
+**标签**: `#webassembly`, `#browser-gaming`, `#emscripten`, `#webgl`, `#game-ports`
+
+---
+
+## 开源 / 开发工具
+
+<a id="item-devtools-news-1"></a>
+### [Ruby 披露 Regexp 与字符串大小写转换多项漏洞](https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/) ⭐️ 8.0/10
+
+Ruby 官方发布安全公告，披露 Regexp 和 String 大小写转换中的多项漏洞，问题集中在非 ASCII 与多字节编码的处理上。公告以 GHSA 标识这些漏洞；据社区评论，发布时 CVE 尚未分配。社区还给出了 Windows-1252 中 ß 转为大写后长度变化，以及 Shift\_JIS 字符串调用 downcase 的复现片段，显示未修复版本存在异常行为。
 
 hackernews · runesoerensen · 11月18日 23:52 · [社区讨论](https://news.ycombinator.com/item?id=50554038)
 
-**「背景」** Ruby 此前长期把“用不可信输入编译正则表达式”视为调用方应自行规避的风险，而不是 Ruby 自身的漏洞；Red Hat 的 CVE-2026-97229 条目记录了旧立场，并指出 Ruby 现已把这类输入可达的内存破坏认定为语言实现中的漏洞。官方 11 月 18 日公告称，此次共发现七个问题，涉及正则引擎与字符串大小写转换，并确认部分问题已有可导致远程代码执行的 PoC。
+**「背景」** Ruby 官方披露其正则表达式引擎和字符串大小写转换代码中存在七个安全漏洞，影响的是语言核心组件，而非单个第三方库。部分漏洞已有概念验证可触发远程代码执行，维护者随后发布 Ruby 4.0.10、3.4.13 和 3.3.14 进行修复。
 
-**「影响」** 处理不可信非 ASCII 文本的 Ruby 服务需要优先检查字符串大小写转换和正则处理入口；在升级到修复版本前，Windows-1252 的 ß 与 Shift\_JIS 超长输入是评论中已展示的具体风险面，应避免直接对这些输入调用 upcase/downcase 或以其他方式限制输入长度和编码。
+**「影响」** 处理用户输入、文件名或文本的 Ruby 服务若使用非 ASCII 或多字节编码，应尽快升级，并用真实编码样本回归大小写转换和正则匹配；字符长度变化及多字节边界可能触发缓冲区问题或异常结果。
 
-**「社区讨论」** 评论者 tptacek 认为 Windows-1252 的 ß 大写化为“SS”可能是缓冲区越界的典型诱因，pentestercrab 则贴出了 Shift\_JIS 超长字符串调用 downcase 的复现输出；nickcw 抱怨 GitHub 分配 CVE 已延迟约四周。这些是社区对触发机制和流程的补充，不等同于官方确认的影响范围。
+**「社区讨论」** tptacek 分析称，Windows-1252 中 ß 转为大写会变成 “SS” 并使字符串长度增加，而大小写转换代码可能按单字符检查缓冲区余量；pentestercrab 给出了 Shift\_JIS 字符串 downcase 的复现片段。nickcw 则指出，GitHub 分配 CVE 目前约有四周延迟，过去只需 2 到 3 天。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/">Security advisories: multiple vulnerabilities in Regexp and ...</a></li>
-<li><a href="https://access.redhat.com/security/cve/cve-2026-97229">CVE-2026-97229 - Red Hat Customer Portal</a></li>
+<li><a href="https://cybersecuritynews.com/ruby-patches-7-security-vulnerabilities/">Ruby Patches 7 Security Vulnerabilities, Including Buffer ...</a></li>
+<li><a href="https://vinish.dev/ruby-4-0-10-security-release-regexp-string-flaws">Ruby 4.0.10, 3.4.13 and 3.3.14 Fix Seven Regexp and String ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Ruby`, `#security vulnerabilities`, `#regular expressions`, `#string handling`, `#CVE`
+**标签**: `#ruby`, `#security-advisory`, `#string-encoding`, `#regexp`, `#vulnerabilities`
 
 ---
 
-## 财经新闻
+<a id="item-devtools-news-2"></a>
+### [GitHub CLI 新增 gh event listen，可等待拉取请求事件](https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli) ⭐️ 7.0/10
 
-<a id="item-finance-news-1"></a>
-### [美联储会议纪要：官员预计仍需加息，并警示 AI 相关通胀与融资风险](https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html) ⭐️ 8.0/10
+GitHub CLI v2.105.0 新增 \`gh event listen\`，可针对拉取请求 URL 等待指定事件（如提交审查），并将事件作为逐行 JSON 输出，默认收到第一个事件后退出。该命令支持 \`--count\` 等待多个事件、\`--follow\` 持续监听、\`--timeout\` 设置超时，并可通过 \`--jq\` 或 \`--template\` 提取字段；还可等待 PR 状态与 head 变更、合并冲突及检查套件完成。该功能依赖处于预览阶段的 GitHub Event Streams，\`gh event\` 命令也属预览且可能变化，使用前需升级到 v2.105.0 或更高版本并申请 Event Streams 等待名单。
 
-美联储 11 月 18 日公布的会议纪要显示，几乎所有与会者都认为进一步加息可能是合适的，以确保通胀及时回到 2%目标；本次会议最终以 10 票对 2 票的结果，将联邦基金利率目标区间维持在 3.75%-4%，两名反对者主张加息 25 个基点。纪要还显示，多数与会者认为与人工智能相关的需求是实质性通胀风险来源，并指出 AI 相关债务增长迅速，且多通过复杂、不透明的融资结构进行。
+rss · GitHub Changelog · 11月19日 00:00
 
-rss · CNBC Finance · 11月18日 19:41
+**「背景」** 此前，脚本和代理要等待拉取请求发生变化，只能循环调用 gh pr view、gh run view 等命令反复轮询，既产生延迟，也带来不必要的 API 调用。GitHub CLI v2.105.0 借助尚处于预览阶段的 GitHub Event Streams，把这些轮询场景改为订阅式的事件监听，并让 gh pr create、gh pr view、gh run view、gh run watch 和 gh api 在提示中推荐 gh event listen。
 
-**「背景」** 此次纪要对应该联储 10 月 27 日至 28 日的政策会议，会上联邦公开市场委员会以 10 票赞成、2 票反对，决定将联邦基金利率目标区间维持在 3.75%至 4%。
+**「影响」** 对脚本和代理工作流而言，这用事件订阅替代轮询循环，可减少等待 PR 变更时的重复查询；但当前需额外申请 Event Streams 访问权限，且预览接口可能变动，生产自动化应预留兼容性处理。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.federalreserve.gov/monetarypolicy/files/fomcminutes20261028.pdf">Minutes of the Federal Open Market Committee - October 27-28, 2026</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Federal Reserve`, `#monetary policy`, `#inflation`, `#interest rates`, `#AI financing`
+**标签**: `#GitHub CLI`, `#event streams`, `#pull requests`, `#automation`, `#developer workflow`
 
 ---
 
-<a id="item-finance-news-2"></a>
-### [Anthropic 将 IPO 定价为每股 83 美元，计划登陆纳斯达克](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) ⭐️ 8.0/10
+<a id="item-devtools-news-3"></a>
+### [GitHub Copilot 开放 Gemini 4 Neon](https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot) ⭐️ 6.0/10
 
-据 Telegram 转发消息，Anthropic 将其首次公开募股定价为每股 83 美元，发行 9.8 亿股 A 类普通股，其中公司出售约 9.56 亿股、部分股东出售约 2365 万股，股东出售所得款项不归公司所有。股票预计于 2026 年 11 月 19 日在纳斯达克全球精选市场以代码 ANT 开始交易、11 月 20 日完成发行，承销商另获 30 天期权，可额外购买最多 1.47 亿股。
+GitHub Copilot 已将 Gemini 4 Neon 正式开放，面向 Pro+、Max、Business 和 Enterprise 用户。该模型面向智能体编程、多步工具调用和知识工作；Google 称其质量接近 Gemini 4 Carbon，但每任务 token 成本更低，并更快开始响应、在编程任务中做出更少未经请求的改动，也更少对代码、工具或测试结果作出无依据断言。它按提供商目录价、以用量计费，可在 VS Code、Visual Studio、Copilot CLI、Copilot 编码代理、Copilot 应用、github.com、iOS/Android 上的 GitHub Mobile、JetBrains IDE、Xcode 和 Eclipse 的模型选择器中使用，目前逐步推送。
 
-telegram · zaihuapd · 11月19日 04:15
+rss · GitHub Changelog · 11月18日 21:49
 
-**「背景」** 首次公开募股（IPO）指企业首次向公众发行股票并挂牌交易；据 TechCrunch 报道，在 AI 相关股票近期波动的背景下，Anthropic 此次 83 美元的发行价仍高于此前预期区间。
+**「背景」** 在 Copilot 的多模型选择中，Google 将 Gemini 4 Neon 定位为 Gemini 4 Carbon 的低成本替代：后者被用作质量与行为的比较基准，而 Neon 强调智能体编程与多步工具调用。此次更新让 Copilot 付费用户可在现有客户端内选用这一模型。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/">Anthropic prices IPO at $83 a share, above projected... | TechCrunch</a></li>
+**「影响」** 实际影响集中在成本与企业管控：若 Google 的性能与成本说法成立，团队可在多步工具调用任务中以更低 token 成本获得接近 Gemini 4 Carbon 的质量，但这些指标尚无独立基准验证。Business 和 Enterprise 管理员可通过模型策略控制访问；在默认模型启用策略下，新模型会自动启用，除非管理员关闭全局默认或显式禁用该模型。
 
-</ul>
-</details>
-
-**标签**: `#Anthropic IPO`, `#AI sector`, `#Nasdaq listing`, `#equity offering`, `#underwriting`
+**标签**: `#GitHub Copilot`, `#Gemini 4 Neon`, `#AI coding agents`, `#model release`, `#usage-based billing`
 
 ---
