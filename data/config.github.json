@@ -1,15 +1,14 @@
 {
   "ai": {
     "provider": "deepseek",
-    "model": "deepseek-v4-flash",
+    "model": "deepseek-flash",
     "base_url": "https://api.deepseek.com",
     "api_key_env": "DEEPSEEK_API_KEY",
     "temperature": 0.3,
     "max_tokens": 8192,
     "throttle_sec": 1,
     "languages": [
-      "zh",
-      "en"
+      "zh"
     ],
     "analysis_concurrency": 5,
     "enrichment_concurrency": 5
@@ -117,7 +116,7 @@
       {
         "name": "LWN.net",
         "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": true,
+        "enabled": false,
         "category": "linux-kernel",
         "profile": "tech-news"
       }
@@ -163,7 +162,7 @@
     "time_window_hours": 24
   },
   "digest": {
-    "max_items": null,
+    "max_items": 10,
     "profile_order": [
       "tech-news",
       "tech-blog",
